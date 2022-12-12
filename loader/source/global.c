@@ -461,6 +461,8 @@ void UpdateNinCFG()
 		ncfg->WiiUGamepadSlot = 0;
 		ncfg->Version = 10;
 	}
+	//Always load gamepad into slot 2 which is player 3.
+	ncfg->WiiUGamepadSlot = 2;
 }
 
 int CreateNewFile(const char *Path, unsigned int size)
